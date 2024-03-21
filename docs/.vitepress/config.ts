@@ -13,31 +13,76 @@ export default defineConfig({
       { text: 'Comenzar', link: '/get-start/introduction' },
       { text: 'ecanquiz', link: 'https://ecanquiz.github.io/' },     
     ],
-    sidebar: [{
-      text: 'Comenzar',   // required
-      path: '/get-start/',      // optional, link of the title, which should be an absolute path and must exist        
-      sidebarDepth: 1,    // optional, defaults to 1
-      collapsible: true,
-      collapsed: false, 
-      items: [
-        { text: 'Introducción', link: '/get-start/introdution' },   
-        { text: 'Empezando', link: '/get-start/getting-started' }             
-      ]
-    }, {
-      text: 'Guías y Conceptos',   
-      path: '/guides-and-concepts/',
-      sidebarDepth: 1,
-      collapsible: true,
-      collapsed: false, 
-      items: [      
-        { text: 'Valores Por-Defecto Importantes', link: '/guides-and-concepts/important-defaults' },
-    
-      ]
-    }],
+    sidebar: [
+      {
+        text: 'Comenzar',   // required
+        path: '/get-start/',      // optional, link of the title, which should be an absolute path and must exist        
+        sidebarDepth: 1,    // optional, defaults to 1
+        collapsible: true,
+        collapsed: false, 
+        items: [
+          { text: 'Introducción', link: '/get-start/introduction' },   
+          { text: 'Empezando', link: '/get-start/getting-started' },
+          { text: 'Manual de ejecución de depuración', link: '/get-start/runbook' },
+        ]
+      }, 
+      {
+        text: 'Conceptos Basicos',   
+        path: '/basics/',
+        sidebarDepth: 1,
+        collapsible: true,
+        collapsed: true, 
+        items: [      
+          { text: 'Interceptando Solicitudes', link: '/basics/intercepting-requests' }, 
+          { text: 'Respuestas Burladas', link: '/basics/mocking-responses' }
+        ]
+      }, 
+      {
+        text: 'Comportamiento de la Red',   
+        path: '/network-behavior/',
+        sidebarDepth: 1,
+        collapsible: true,
+        collapsed: true, 
+        items: [      
+          { text: 'Describiendo la API REST', link: '/network-behavior/rest' }, 
+          { text: 'Describiendo la API GraphQL', link: '/network-behavior/graphql' }
+        ]
+      }, 
+      {
+        text: 'Integración',   
+        path: '/integrations/',
+        sidebarDepth: 1,
+        collapsible: true,
+        collapsed: true, 
+        items: [      
+          { text: 'Integración del Navegador', link: '/integrations/browser' }, 
+          { text: 'Integración de Node.js', link: '/integrations/node' }
+        ]
+      },
+      {
+        text: 'Mejores Prácticas',   
+        path: '/best-practices/',
+        sidebarDepth: 1,
+        collapsible: true,
+        collapsed: true, 
+        items: [      
+          { text: 'Usando con TypeScript', link: '/best-practices/typescript' },    
+        ]
+      }, 
+      {
+        text: 'Recetas',   
+        path: '/recipes/',
+        sidebarDepth: 1,
+        collapsible: true,
+        collapsed: true, 
+        items: [      
+          { text: 'Usando CDN', link: '/recipes/using-cdn' },    
+        ]
+      }
+    ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ecanquiz/mswjs' }
     ]
   }
 })
-
 
