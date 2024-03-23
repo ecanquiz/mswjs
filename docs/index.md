@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Mock"
   text: "Service Worker"
-  tagline: "mswjs"
+  tagline: "MSWjs"
   image:
     src: /logo.png
     alt: VitePress

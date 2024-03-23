@@ -23,18 +23,30 @@ export default defineConfig({
         items: [
           { text: 'Introducción', link: '/get-start/introduction' },   
           { text: 'Empezando', link: '/get-start/getting-started' },
+          { text: 'Filosofía', link: '/get-start/philosophy' },          
+          { text: 'Comparación', link: '/get-start/comparison' },                
           { text: 'Manual de ejecución de depuración', link: '/get-start/runbook' },
         ]
       }, 
       {
-        text: 'Conceptos Basicos',   
+        text: 'Basicos',   
         path: '/basics/',
         sidebarDepth: 1,
         collapsible: true,
         collapsed: true, 
         items: [      
           { text: 'Interceptando Solicitudes', link: '/basics/intercepting-requests' }, 
-          { text: 'Respuestas Burladas', link: '/basics/mocking-responses' }
+          { text: 'Respuestas Burladas', link: '/basics/mocking-responses' }          
+        ]
+      }, 
+      {
+        text: 'Conceptos',   
+        path: '/concepts/',
+        sidebarDepth: 1,
+        collapsible: true,
+        collapsed: true, 
+        items: [      
+          { text: 'Manejador de solicitudes', link: '/concepts/request-handler' },                    
         ]
       }, 
       {
