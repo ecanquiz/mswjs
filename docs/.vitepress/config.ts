@@ -24,7 +24,8 @@ export default defineConfig({
           { text: 'Introducción', link: '/get-start/introduction' },   
           { text: 'Empezando', link: '/get-start/getting-started' },
           { text: 'Filosofía', link: '/get-start/philosophy' },          
-          { text: 'Comparación', link: '/get-start/comparison' },                
+          { text: 'Comparación', link: '/get-start/comparison' },
+          { text: 'Limitaciones', link: '/get-start/limitations' },
           { text: 'Manual de ejecución de depuración', link: '/get-start/runbook' },
         ]
       }, 
@@ -59,7 +60,7 @@ export default defineConfig({
           { text: 'Describiendo la API REST', link: '/network-behavior/rest' }, 
           { text: 'Describiendo la API GraphQL', link: '/network-behavior/graphql' }
         ]
-      }, 
+      },
       {
         text: 'Integración',   
         path: '/integrations/',
@@ -69,6 +70,16 @@ export default defineConfig({
         items: [      
           { text: 'Integración del Navegador', link: '/integrations/browser' }, 
           { text: 'Integración de Node.js', link: '/integrations/node' }
+        ]
+      },
+      {
+        text: 'API',   
+        path: '/api/',
+        sidebarDepth: 1,
+        collapsible: true,
+        collapsed: true, 
+        items: [      
+          { text: 'bypass', link: '/api/bypass' },         
         ]
       },
       {
