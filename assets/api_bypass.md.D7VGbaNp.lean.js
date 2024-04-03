@@ -1,0 +1,1 @@
+import{_ as a,c as s,o as e,V as t}from"./chunks/framework.-lsX7DWn.js";const h=JSON.parse('{"title":"bypass","description":"","frontmatter":{},"headers":[],"relativePath":"api/bypass.md","filePath":"api/bypass.md"}'),o={name:"api/bypass.md"},r=t("",2),i=[r];function n(p,c,_,l,d,b){return e(),s("div",null,i)}const m=a(o,[["render",n]]);export{h as __pageData,m as default};
