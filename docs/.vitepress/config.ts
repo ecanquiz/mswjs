@@ -26,7 +26,7 @@ export default defineConfig({
           { text: 'Filosofía', link: '/get-start/philosophy' },          
           { text: 'Comparación', link: '/get-start/comparison' },
           { text: 'Limitaciones', link: '/get-start/limitations' },
-          { text: 'Manual de ejecución de depuración', link: '/get-start/runbook' },
+          { text: 'Runbook de depuración', link: '/get-start/runbook' },
         ]
       }, 
       {
@@ -79,7 +79,8 @@ export default defineConfig({
         collapsible: true,
         collapsed: true, 
         items: [      
-          { text: 'bypass', link: '/api/bypass' },         
+          { text: 'bypass', link: '/api/bypass' },
+          { text: 'Eventos del ciclo de vida', link: '/api/life-cycle-events' }
         ]
       },
       {
